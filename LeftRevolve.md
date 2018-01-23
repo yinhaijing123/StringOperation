@@ -3,7 +3,7 @@
 
 ____
 
-#####代码如下：
+代码如下：
 
 ```c
 
@@ -23,8 +23,8 @@ int Judge(char str1[], char str2[],int size)
 		for (i = 0; i <size - 1;i++)
 		{
 			str[i] = str[i + 1];     //如若size是用sizeof求出的，\
-			                            则边界条件需修改为i<size-2.\
-										因为它不应该先拷贝'\0',再拷贝tmp。
+			                           则边界条件需修改为i<size-2.\
+					           因为它不应该先拷贝'\0',再拷贝tmp。
 		}
 		str[size - 1] = tmp;
 		if (strcmp(str, str2) == 0)
